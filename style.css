@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition:all 300ms ease-in-out; */
+}
+
+:root {
+  font-size: 19px;
+}
+
+ @media(min-width: 768px) {
+   :root{
+     font-size: 18px;
+   }
+ }
+  @media(min-width: 1400px) {
+    :root {
+      font-size: 19px;
+    }
+  }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.0rem;
+  font-weight:500;
+  color:rgb(70, 60, 60);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color:#2c3e50;
+}
+
+/* --- HEADER --- */
+
+/* NAVBAR */
+  .navbar {
+    font-size: 1.125rem;
+    padding-bottom: 1.8em;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+
+  .nav-links,
+  .logo {
+    text-decoration: none;
+    color:rgba(119, 112, 112, 0.7);
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 24px;
+  }
+
+  .fas {
+    color:rgb(117, 105, 105);
+  }
+  .active {
+    display: block;
+  }
+
+  section {
+    padding:4%;
+    color:#788383;
+    background: #fff;
+    text-align: center;
+  }
+
+/* HEADER */
+
+#main-header {
+  padding:4%;
+  /* display: flex; */
+  /* text-align: center; */
+  color:#788383;
+  background: #ecf0f1;
+  margin-bottom: 6vh;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:center;
+  text-align: center;
+}
+
+#main-header .content {
+  flex:0 1 40rem;
+  text-align: left;
+}
+
+
+#main-header .content h1 {
+  font-weight:700;
+  text-shadow: 0 0 1.5px #000;
+}
+
+#main-header .content h3 {
+  margin-bottom:1rem;
+}
+
+
+#main-header .center #img {
+  max-width: 300px;
+  max-height: 300px;
+  flex: 4 2 350px;
+  border-radius: 40%;
+  margin-bottom: 3em;
+  margin-right: 1%;
+  transition: none;
+}
+
+.bold {
+  color:#4b5252;
+  font-weight: 500;
+}
+
+/* ---- SERVICES ---- */
+
+section#services h2 {
+  margin-bottom: 2em;
+}
+
+
+section#services .icon {
+  flex: 1 1 16em;
+  margin-bottom: 20px;
+  text-align: center;
+  margin:10px 1%;
+}
+
+section#services .baseline {
+  align-items: none;
+}
+
+section#services .icon .fas {
+  font-size: 5.55em;
+  margin: 40px 0;
+}
+
+/* --- PORTFOLIO --- */
+
+section#portfolio {
+  padding:4%;
+  background: #ecf0f1;
+}
+
+section#portfolio h2 {
+  margin-bottom: 2em; 
+}
+
+section#portfolio a {
+   flex:1 1 40%;
+   margin:4%;
+}
+
+/* section#portfolio .surround {
+  display: flex;
+  flex: 5 1 40%vw;
+} */
+
+section#portfolio a img {
+  max-height: 420px;
+  max-width: 420px;
+  width:90vw;
+  border:3px solid lightgray;
+  border-radius: 10%;
+  align-content: space-around; 
+  margin-bottom: 10%;
+}
+
+#img {
+    transform: rotate(90deg);
+}
+
+/* SECTION CONTACT */
+
+section#contact {
+  text-align: center;
+  padding:4%;
+  position: relative;
+}
+section#contact h2 {
+  margin-bottom: 2em;
+}
+
+section#contact .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+} 
+
+section#contact .set {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+section#contact .contact-p {
+  align-self: flex-end;
+  max-width:50vw;
+  position: absolute;
+  right:30px;
+  top:230px;
+}
+
+/* section#contact .set .contact-p {
+  right:20px;
+  top:-10px;
+} */
+
+section#contact h3 {
+  margin-bottom: 0.9em;
+  font-size: 1.5em;
+}
+
+section#contact p {
+  font-size: 1.2em;
+}
+
+ 
+
+section#contact .fas {
+  margin-right: 30px;
+  font-size: 35px;
+  margin-top:20px;
+}
+
+
+section#contact .fa-phone {
+  transform: rotate(100deg);
+}
+
+/* Footer */
+
+footer#main-footer {
+  background: #afb3b6;
+  padding:20px;  
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 19px;
+  }
+}
+
+
+@media(max-width:480px){
+  #main-header .content {
+    /* text-align: left; */
+  }
+}
+
+@media only screen and (min-width : 1824px) {
+  section#portfolio a img {
+    max-height: 500px;
+    max-width: 500px;
+    width: 90vw;
+    border: 3px solid lightgray;
+    border-radius: 10%;
+    align-content: space-around;
+    margin-bottom: 10%;
+  }
+}
+
+/*Ya Muhammad
+  Ya Ali
+  Ya Fatima
+  Ya Hassan
+  Ya Hussain*
+  /
